@@ -1,0 +1,71 @@
+---
+import Container from "../components/Container.astro"
+import Layout from '../layouts/Layout.astro';
+import Team from "../components/Stats.astro";
+---
+
+<Layout title="Welcome to My site">
+	<main class="space-y-20">
+		<Container>
+            <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+                <div class="row items-center py-5 md:pb-20 md:pt-10">
+                    <div class="text-center space-y-10">
+                        <h2 class="text-5xl font-medium leading-none md:text-6xl">$Petmi Tokenomics</h2>
+                        <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12"><p class="text-center my-4">The Petmi Coin <a href="https://sepolia.arbiscan.io/address/0x1c7a9b15d6663ddba5fcbf63f37d27f73ad76e07#code" target="_blank" class="text-blue-600 hover:underline">smart contract</a> does not have any ownership or mint function. The one billion supply of $PETMI tokens are pre-minted. The <a href="https://sepolia.arbiscan.io/address/0x1c7a9b15d6663ddba5fcbf63f37d27f73ad76e07#code" target="_blank" class="text-blue-600 hover:underline">smart contract</a> is effectively frozen and renounced.</p></p>
+                    <div class="flex justify-center text-xl">
+                                    <div class="mx-4">
+                                        <ul class="text-left">
+                                            <li>Supply: 1 Billion</li>
+                                            <li>Liquidity: Million</li>
+                                            <li>Circulation: 1 Billion</li>
+                                            <li>LP: Burnt</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mx-4">
+                                        <ul class="text-left">
+                                            <li>Name: $Petmi</li>
+                                            <li>Network: Arbitrum</li>
+                                            <li>Tax: None</li>
+                                            <li>Slippage: 0.5%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mx-4">
+                                    <ul class="text-left">
+                                     <li>50%: Airdrop</li>
+                                     <li>30%: LP</li>
+                                     <li>10%: Foundation</li>
+                                     <li>10%: Team and Marketing</li>
+                                     </ul>
+                                     </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-row items-center">
+                <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                        <img src="./clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    </div>
+                </div>
+            </div>
+        </Container>
+        <Team/>
+	</main>
+</Layout>
